@@ -1,0 +1,173 @@
+.container {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: repeat(6, auto);
+  gap: 10px;
+  width: 1250px;
+  margin: 0 auto;
+}
+
+header {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #b0e0ea;
+  color: #9f9c9c;
+  padding: 20px 0;
+}
+header .logo i {
+  font-size: 2em;
+}
+header > nav > ul {
+  display: flex;
+}
+header > nav > ul > li {
+  margin: 0.5em;
+}
+header > button.login {
+  padding: 9px 30px;
+  border-radius: 1.3em;
+}
+
+.hero {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.recent-posts {
+  grid-column: 1/2;
+  grid-row: 3/5;
+  padding: 2em;
+}
+.recent-posts li {
+  margin: 0.2em 0;
+}
+
+main {
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+
+.help {
+  grid-column: 2/4;
+  grid-row: 4/5;
+  display: flex;
+  justify-content: space-around;
+}
+.help h3 {
+  font-weight: 500;
+}
+.help p {
+  margin: 0.75em 0;
+  font-size: 0.75em;
+}
+.help-item button {
+  padding: 0.5em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.gallery {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.8em;
+}
+
+.related-posts {
+  grid-column: 3/4;
+  grid-row: 5/6;
+  padding: 2em;
+}
+
+.related-posts ul {
+  margin-left: 1.1em;
+}
+
+.related-posts li {
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+footer {
+  grid-column: 1/4;
+  grid-row: 6/7;
+  padding: 2em 0;
+}
+footer h3 {
+  margin-bottom: 0.7em;
+}
+footer p {
+  margin-bottom: 0.8em;
+  font-size: 0.75em;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+header > .logo i {
+  color: rgba(80, 198, 219, 0.85);
+}
+header > nav > ul {
+  list-style-type: none;
+}
+header > button.login {
+  background-color: #51bb7b;
+  color: #fff;
+  border-style: none;
+}
+header.login:focus {
+  background-color: rgba(80, 198, 219, 0.85);
+}
+
+.recent-posts ul {
+  list-style-type: none;
+}
+
+.help {
+  border: 1px solid #9f9c9c;
+}
+.help-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0.75em;
+}
+.help-item button {
+  border: 2.5px solid rgba(80, 198, 219, 0.85);
+  color: rgba(80, 198, 219, 0.85);
+  background-color: #fff;
+}
+
+.gallery {
+  grid-column: 1/3;
+  grid-row: 5/6;
+  display: grid;
+}
+
+footer {
+  text-align: center;
+  background-color: #9f9c9c;
+}
+footer h3 {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
